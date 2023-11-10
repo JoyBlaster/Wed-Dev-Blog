@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Dev Blog</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <h1> Web Dev Blog </h1>
+  <nav>
+    <ul>
+      <li><a href="#"> Week1</a></li>
+      <li><a href="#"> Week2</a></li>
+      <li><a href="#"> Week3</a></li>
+    </ul>
+  </nav>
+  <article>
+    <h3> Week 1 Dev Blog </h1>
+    <img src = "Wireless cat.jpg">
+    <p>
+    <header>Intro to HTML</header>
+    <ol>
+      <li>I learned what web developers do.</li>
+      <li>I learned a bit of HTML and made my first webpage.</li>
+      <li>I learned about a few basic HTML tags.</li>
+    </ol>
+    </p>
+  </article>
+  <article>
+    <h3> Week 2 Dev Blog </h3>
+    <img src = "Yawning Cat.jpeg">
+    <p>
+    <header> Semantics CSS </header>
+    <ol>
+      <li>HTML Semantics adds meaning behind specific web contents.</li>
+      <li>Allows for the creation of more intelligent applications which can process data more sensibly.</li>
+      <li>Common elements: Header, Nav, Article, Section. </li>
+      <li>CSS defines style of HTML.</li>
+      <li>ID Attribute: Selects 1 element with the id "header".(unique) "#" = CSS id.</li>
+      <li>Class Attribute:Selects elements with the class name.(not unique) Elements with attribute affected when something applied. "." = CSS class name.</li>
+      <li>CSS covers the overall appearances of website, while HTML covers the contents and structure</li>
+    </ol></p>
+  </article>
+  <article>
+    <h3> Week 3 Dev Blog </h3>
+    <img src = "Smiling Cat.jpeg">
+    <p><header>HTML Forms</header>
+    <ol>
+      <li>FORM tag: allows user input</li>
+      <li>Basic inputs: Single/Multi line text, Select, Search, Hidden, Password</li>
+      
+      <li>Descendant Selector: A line with requirement and condition. If requirement fulfilled, carry out condition. <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator'>Example</a></li>
+      <li>Grouping Selector: Selects all HTML elements with same style definitions. <a href="https://www.w3schools.com/css/css_selectors.asp#:~:text=The%20CSS%20Grouping%20Selector,with%20the%20same%20style%20definitions.&text=It%20will%20be%20better%20to,each%20selector%20with%20a%20comma.">Example</a></li>
+      <li>Inheritance: Properties of parents are carried over to elements. <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Inheritance'>Example</a></li>
+      <li>Important keyword overrides source order and specificity. (Added at end) (Might makes things messy in long run)</li>
+      <li>Types of styles: Colour, Border, BG, ID/Class selector. Practice CSS Styles with <a href="https://flukeout.github.io/">CSS Diner</a></li> 
+      <li>Types of Positioning: 
+        <ul>
+          <li>Relative (Move around relative to where they shld appear)</li>
+          <li>Absolute (Offset relative to browser window)</li> 
+          <li>Relative Absolute (Offset relative to where they shld appear)</li>
+          <li>Fixed (Elements can't scroll with page)</li></ul> 
+      <li>Flexbox: Flexbox container contains flexboxes (obviously). Children of flexboxes can be resized. Practice Flexboxes with <a href="https://flexboxfroggy.com/">Flexbox Froggy.</a></li>
+      <li>Wireframes are blueprints but for apps/websites.<ul>
+        <li>Low-fidelity is for starting out with the website planning.</li>
+        <li>High-fidelity is for a close representation and giving the stakeholder something close to the tangible product.</li>
+      </ul></li>
+    </ol>
+    </p>
+  </article>
+  <article>
+    <h3> Week 4 Dev Blog </h3>
+    <img src="Cat biting on hand.jpeg">
+    <p><header>Putting It All Together </header> <br>
+    Responsive images auto-resizing based on screen size, have better performances due to resolution adjusting and provide better design control for devices.</p>
+    <p>Using "max-width: 100%" prevents image from increasing in size beyond it's original size. "background-size: cover" can fit images into box.</p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow">Flex-grow</a> responsive unit for flexbox items. EG: flex-grow: 1%, 5% grow factor. "flex-grow: inherit" will take the earlier value of flex-grow, used to give flexboxes that wrapped around the same size as earlier flexboxes..</p>
+    <p>Flex-grow EG: 6 flex items. A,B,C,F = flex-grow: 1. D,E = flex-grow: 2. Total growth value: 4x1 + 2x2 = 8 total. Each growth value is 100%/8 = 12.5%. A,B,C,D is 12.5% each, while D,E are 25% each.
+    <div id="content">
+      <div class="small" style="background-color:red;">A</div>
+      <div class="small" style="background-color:lightblue;">B</div>
+      <div class="small" style="background-color:yellow;">C</div>
+      <div class="double" style="background-color:brown;">D</div>
+      <div class="double" style="background-color:lightgreen;">E</div>
+      <div class="small" style="background-color:brown;">F</div>
+    </div></p>
+    <p><a href="https://www.w3schools.com/cssref/css3_pr_flex-basis.php">Flex-basis</a> assigns allocation size for items. (The initial size.)</p>
+    <p>@media rule will take the size of device. Put in style tag.</p>
+    <p>Git: version control system. It allows a coder to control the different versions of files in a project. It keeps track of all changes to files over time</p>
+  </article>
+  </body>
+</html>

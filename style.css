@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  h3{color:blue}
+  
+  img{width: 150px;
+     height: 150px;
+     border-radius: 25%;}
+  
+  
+  #content {
+    display: flex;
+  
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+  
+  .small {
+    flex-grow: 1;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .double {
+    flex-grow: 2;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+  }
