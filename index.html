@@ -71,8 +71,8 @@
   <article>
     <h3> Week 4 Dev Blog </h3>
     <img src="Cat biting on hand.jpeg">
-    <p><header>Putting It All Together </header> <br>
-    Responsive images auto-resizing based on screen size, have better performances due to resolution adjusting and provide better design control for devices.</p>
+    <header>Putting It All Together </header> <br>
+    <p>Responsive images auto-resizing based on screen size, have better performances due to resolution adjusting and provide better design control for devices.</p>
     <p>Using "max-width: 100%" prevents image from increasing in size beyond it's original size. "background-size: cover" can fit images into box.</p>
     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow">Flex-grow</a> responsive unit for flexbox items. EG: flex-grow: 1%, 5% grow factor. "flex-grow: inherit" will take the earlier value of flex-grow, used to give flexboxes that wrapped around the same size as earlier flexboxes..</p>
     <p>Flex-grow EG: 6 flex items. A,B,C,F = flex-grow: 1. D,E = flex-grow: 2. Total growth value: 4x1 + 2x2 = 8 total. Each growth value is 100%/8 = 12.5%. A,B,C,D is 12.5% each, while D,E are 25% each.
@@ -88,5 +88,36 @@
     <p>@media rule will take the size of device. Put in style tag.</p>
     <p>Git: version control system. It allows a coder to control the different versions of files in a project. It keeps track of all changes to files over time</p>
   </article>
+  <article>
+    <h3> Week 5 Dev Blog </h3>
+    <img src="Cat in bread.jpeg">
+    <header>Javascript Basics</header> <br>
+    <p>Note: ECMA international maintains Javascript versions, so version names will contain ECMA.</p>
+    <p><ul><li>ECMAScript5 / ES5: General baseline until recently since 2012.</li>
+      <li>ECMAScript 2015 / ES6: Current baseline. Browser support is general and safe enough for all to use.</li>
+      <li>ECMAScript 2016 & Beyond: Finalized annually, and continually introduces new features.</li>
+    </p>
+    <p>Transpilers: Allows less compatible Javascript and converts them to ES5 or any versions prior. (EG: Babel)</p>
+    <p>Web browsers have Javascript consoles, and Github code space has Node.js consoles.</p> <br>
+
+    <p>Note: Comparisons is "===" in Javascript, not to be confused with "==" in python.</p>
+    <p>Variable: A placeholder that can store data. To make variable x, use "var x = 32;"</p>
+    <p>String: Text. Use quotation marks(''). Can use different properties. EG: "the dead return".toUpperCase() gives "THE DEAD RETURN"</p>
+    <p>Numbers: Numbers lol. Can be integers(whole no.), floats(decimals), but it all counts as numbers in HTML. 
+      'Math' command allows user to do math with numbers. EG: Math.round(12.432) gives 12</p>
+    <p>Booleans: True / False. (Must all be lowercase) Flags are booleans. Variables can be booleans.</p>
+    <p>"const" are CONSTANTS. Variables made after 'const' CANNOT be changed. (Useful for creating set-in-stone variables.)</p> <br>
+    
+    <p>Objects: Uses {}. var anObject = {label:"value"} Redefining variable ADDS the new property to object.</p>
+    <p>Arrays: Lists with fixed orders. Uses []. Can use indexing to find specific items. If number = [1,2,3], number[0] gives 1. 
+      Pop to display last item, then remove it. Shift does same thing, but with first item. .splice[index,no.of items] removes specified no. of items at index. (does not leave empty spot).</p>
+    <p>Whitespaces are just spaces. Javascript usually ignores them, but they make the code easier to read. Can also use different lines.</p>
+    <p>Comments are sections where text added does not do anything in the code. It allows developers to provide explanations in their code, or increase readability. 
+      Line comments are done with '//' and it comments out text after this.
+      Block comments are done with '/*' and it comments out text until a '*/' is added.</p>
+    <p>Regular Expressions: Represented with /text between dbl slashes/. Can be used to check for specific words/phrases/numbers.
+      Modifiers: /text/i (Case Insensitive), /^text/i (Match against beginning of string), /text$/i (Match against end of string), /ever\$/i (\ escapes, allowing for it to check for dollar sign without counting as a command)</p>
+
+    </article>
   </body>
 </html>
