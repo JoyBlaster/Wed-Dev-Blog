@@ -158,7 +158,17 @@
         EG: let isEven = (num) => {}</p>
       <p>"...variable" will collect the rest of the objects as 1 object.
         EG: function taste(...flavors){console.log("The flavors are",flavors)}    returns "The flavors are ['choco','vanilla',strawberry']"</p>
-      <p></p>
+      
+      <p>Asynchronous means to do a step while another is currently in progress. Doing steps asynchronously allows a code to be run faster.</p>
+      <p>PROMISES are objects which capture the result of an asynchronouse action with an API when promised data successfully/failed to come through.
+        EG with 'axios':
+        axios
+          .get('url')
+          .then(function(response1)){}
+          .then(function(response2)){}     //same lvl .then will be done at same time
+        EG with 'async' & 'await':
+        async function getItem(){
+          var response = await axios.get('url')}    //stored directly instead of handled by callback functions</p>
   </article>
   </body>
 </html>
