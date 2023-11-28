@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Dev Blog</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <h1> Web Dev Blog </h1>
+  <nav>
+    <ul>
+      <li><a href="index.html"> Week1</a></li>
+      <li><a href="week2.html"> Week2</a></li>
+      <li><a href="week3.html"> Week3</a></li>
+      <li><a href="week4.html"> Week4</a></li>
+      <li><a href="week5.html"> Week5</a></li>
+      <li><a href="week6.html"> Week6</a></li>
+      <li><a href="week7.html"> Week7</a></li>
+    </ul>
+  </nav>
+  <article>
+    <h3> Week 5 Dev Blog </h3>
+    <img src="Cat in bread.jpeg">
+    <header>Javascript Basics</header> <br>
+    <p>Note: ECMA international maintains Javascript versions, so version names will contain ECMA.</p>
+    <p><ul><li>ECMAScript5 / ES5: General baseline until recently since 2012.</li>
+      <li>ECMAScript 2015 / ES6: Current baseline. Browser support is general and safe enough for all to use.</li>
+      <li>ECMAScript 2016 & Beyond: Finalized annually, and continually introduces new features.</li>
+    </p>
+    <p>Transpilers: Allows less compatible Javascript and converts them to ES5 or any versions prior. (EG: Babel)</p>
+    <p>Web browsers have Javascript consoles, and Github code space has Node.js consoles.</p> <br>
+    <img src="Lesson 1 quiz.png">
+
+    <p>Variable: A placeholder that can store data. To make variable x, use "var x = 32;"</p>
+    <p>String: Text. Use quotation marks(''). Can use different properties. EG: "the dead return".toUpperCase() gives "THE DEAD RETURN"</p>
+    <p>Numbers: Numbers lol. Can be integers(whole no.), floats(decimals), but it all counts as numbers in HTML. 
+      'Math' command allows user to do math with numbers. EG: Math.round(12.432) gives 12</p>
+    <p>Booleans: True / False. (Must all be lowercase) Flags are booleans. Variables can be booleans.</p>
+    <p>"const" are CONSTANTS. Variables made after 'const' CANNOT be changed. (Useful for creating set-in-stone variables.)</p> <br>
+    <img src="Lesson 2 quiz.png">
+
+    <p>Objects: Uses {}. var anObject = {label:"value"} Redefining variable ADDS the new property to object.</p>
+    <p>Arrays: Lists with fixed orders. Uses []. Can use indexing to find specific items. If number = [1,2,3], number[0] gives 1. 
+      Pop to display last item, then remove it. Shift does same thing, but with first item. .splice[index,no.of items] removes specified no. of items at index. (does not leave empty spot).</p>
+    <p>Whitespaces are just spaces. Javascript usually ignores them, but they make the code easier to read. Can also use different lines.</p>
+    <p>Comments are sections where text added does not do anything in the code. It allows developers to provide explanations in their code, or increase readability. 
+      Line comments are done with '//' and it comments out text after this.
+      Block comments are done with '/*' and it comments out text until a '*/' is added.</p>
+    <p>Regular Expressions: Represented with /text between dbl slashes/. Can be used to check for specific words/phrases/numbers.
+      Modifiers: /text/i (Case Insensitive), /^text/i (Match against beginning of string), /text$/i (Match against end of string), /ever\$/i (\ escapes, allowing for it to check for dollar sign without counting as a command)</p>
+    <img src="Lesson 3 quiz.png">
+
+    <p>Comparisons are done with "===", not "==" like in python. Anti-comparisons are done with "!==".</p>
+    <p>Arithmetics are similar to in python, but instead of "count += 1", can also use "count ++" (Only works for 1 increment at a time).
+      Similarly, "count --" can be used instead of "count -= 1" (also only works for 1 increment at a time).</p>
+    <p>"&&" can be used to check multiple statements at once (basically, it's the AND command in python). EG: "animal1 === 'monkey' && animal2 === 'bear'"
+      "||" can be used to check at least 1 statement (basically, it's the OR command in python).</p>
+    <p>IF statments are similar to python, but statements must be done in (). Result must also be put in {}.
+      EG: if (answer === true) {
+        console.log("You said yes!")
+      }</p>
+    <p>Switch block: Like IF statments, except it tests multiple cases. (Basically an IF-ELSE statement.)
+      EG:switch(answer){
+        case "YES":              // If ans is YES, print "yay". Case can be used multiple times, like an ELIF.
+          console.log("yay")  
+          break
+        default:
+          console.log("bruh")    // Otherwise, print "bruh". Default is used at the end, like an ELSE.
+          break
+      }</p>
+      <p>TYPEOF can be used to check for object type. EG: thing = "twelve";   typeof thing returns 'string'.
+        Possible types: string,number,boolean,null(just means nothing).
+      </p>
+      <p>Note: Truthy and Falseys are AUTOMATICALLY ASSIGNING booleans, depending on the type of </p>
+      <img src="Lesson 4 quiz.png">
+
+      <p>FOR/WHILE loops, function similarly as in python. Statements must be done in (), and results must be in {}.
+        FOR loops can be sequential (counted by numerical increments) or enumerative (counted by items in object).</p>
+      <p>SET: Similar to arrays, but it stores a value exactly ONCE(no repeats) and can only be altered/accessed by METHODS (no indexing).
+        EG: mySet[0] === "Juno";This does not work.         mySet.add("Juno");This will add object in.       mySet.has("Juno");Will tell if item exists in set.</p>
+      <p>MAP: Similar to regular objects, but preserves key order. Similar to SETs, can only be altered/accessed by METHODS.</p>
+      <p>ARRAYS can be converted to SETS, and will automatically remove dupes.
+        EG: let mySet = newSet(myList);   // This will create a new set based on an array.</p>
+      <img src="Lesson 5 quiz.png">
+
+      <p>FUNCTIONS function similarly to python functions. Similar to FOR/WHILE loops, statements must be done in (), and results in {}.</p>
+      <p>Scopes are where variables are defined, and what can parts of the code can access them. Scopes are either global (accessible from anywhere) or local (accessibility is more limited.)
+        Global may be more convenient, but may make code extra messy and slow.
+        var creates a scope determined by function in which it is defined. 
+        let allows made variables to be reassigned.
+        const creates unchangeable variables.</p>
+      <p>"=>" is an arrow function. It is a shortcut to define functions.
+        EG: let isEven = (num) => {}</p>
+      <p>"...variable" will collect the rest of the objects as 1 object.
+        EG: function taste(...flavors){console.log("The flavors are",flavors)}    returns "The flavors are ['choco','vanilla',strawberry']"</p>
+      <img src="Lesson 6 quiz.png">
+      
+      <p>Asynchronous means to do a step while another is currently in progress. Doing steps asynchronously allows a code to be run faster.</p>
+      <p>PROMISES are objects which capture the result of an asynchronouse action with an API when promised data successfully/failed to come through.
+        EG with 'axios':
+        axios
+          .get('url')
+          .then(function(response1)){}
+          .then(function(response2)){}     //same lvl .then will be done at same time
+        EG with 'async' & 'await':
+        async function getItem(){
+          var response = await axios.get('url')}    //stored directly instead of handled by callback functions</p>
+      <img src="Lesson 7 quiz.png">
+        
+  </article>
+</body>
+</html>
